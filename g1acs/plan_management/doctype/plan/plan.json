@@ -1,0 +1,486 @@
+{
+ "actions": [],
+ "autoname": "field:participant",
+ "creation": "2021-01-24 19:43:21.625008",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bd1",
+  "section_break_2",
+  "scheck",
+  "participant",
+  "email",
+  "primary_contact_number",
+  "date_of_birth",
+  "column_break_7",
+  "total_allocation",
+  "total_delivered",
+  "total_remaining",
+  "section_break_10",
+  "funding",
+  "bud1",
+  "bud2",
+  "bud3",
+  "bud4",
+  "bud5",
+  "bud6",
+  "bud7",
+  "bud8",
+  "bud9",
+  "bud10",
+  "bud11",
+  "bud12",
+  "bud13",
+  "bud14",
+  "bud15",
+  "bdl1",
+  "bdl2",
+  "bdl3",
+  "bdl4",
+  "bdl5",
+  "bdl6",
+  "bdl7",
+  "bdl8",
+  "bdl9",
+  "bdl10",
+  "bdl11",
+  "bdl12",
+  "bdl13",
+  "bdl14",
+  "bdl15",
+  "bdr1",
+  "bdr2",
+  "bdr3",
+  "bdr4",
+  "bdr5",
+  "bdr6",
+  "bdr15",
+  "bdr14",
+  "bdr13",
+  "bdr12",
+  "bdr11",
+  "bdr10",
+  "bdr9",
+  "bdr8",
+  "bdr7"
+ ],
+ "fields": [
+  {
+   "fieldname": "bd1",
+   "fieldtype": "HTML",
+   "label": "bd1",
+   "options": "<h1>Plan Management</h1>"
+  },
+  {
+   "fieldname": "participant",
+   "fieldtype": "Link",
+   "label": "Participant",
+   "options": "Participant",
+   "unique": 1
+  },
+  {
+   "fieldname": "total_allocation",
+   "fieldtype": "Currency",
+   "label": "Total Allocation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_delivered",
+   "fieldtype": "Currency",
+   "label": "Total Delivered",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_remaining",
+   "fieldtype": "Currency",
+   "label": "Total Remaining",
+   "read_only": 1
+  },
+  {
+   "fieldname": "funding",
+   "fieldtype": "Table",
+   "label": "Funding",
+   "options": "Funding"
+  },
+  {
+   "fieldname": "bud1",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud2",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud3",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud4",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud5",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud6",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud7",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud7",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud8",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud8",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud9",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud10",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud10",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud11",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud11",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud12",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud12",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud13",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud13",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud14",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud14",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bud15",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bud15",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl1",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl2",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl3",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl4",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl5",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl6",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl7",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl7",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl8",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl8",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl9",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl10",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl10",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl11",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl11",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl12",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl12",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl13",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl13",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl14",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl14",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdl15",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdl15",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "participant.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "participant.primary_contact_number",
+   "fieldname": "primary_contact_number",
+   "fieldtype": "Data",
+   "label": "Primary Contact Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "participant.date_of_birth",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scheck",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "scheck",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr1",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr2",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr3",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr4",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr5",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr6",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr15",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr15",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr14",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr14",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr13",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr13",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr12",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr12",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr11",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr11",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr10",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr10",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr9",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr8",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr8",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bdr7",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr7",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-05-15 11:16:04.905504",
+ "modified_by": "Administrator",
+ "module": "Plan Management",
+ "name": "Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

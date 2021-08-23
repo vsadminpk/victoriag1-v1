@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "autoname": "format: {standard} - CIP - {####}",
+ "creation": "2021-05-28 09:30:14.301143",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "standard",
+  "issue_identified",
+  "what_outcome_or_goal_do_we_seek",
+  "plmh",
+  "howsteps",
+  "success_measure",
+  "bywhen",
+  "progress_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "standard",
+   "fieldtype": "Select",
+   "label": "Standard ",
+   "options": "1 Participant Rights & Responsibilities\n2 Governance & Management\n3 Access to Supports\n4 Safety in Delivering Supports"
+  },
+  {
+   "fieldname": "issue_identified",
+   "fieldtype": "Data",
+   "label": "Issue Identified"
+  },
+  {
+   "fieldname": "what_outcome_or_goal_do_we_seek",
+   "fieldtype": "Small Text",
+   "label": "What outcome or goal do we seek?"
+  },
+  {
+   "default": "N/A",
+   "fieldname": "plmh",
+   "fieldtype": "Select",
+   "label": "Priority (L/M/H)",
+   "options": "N/A\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "howsteps",
+   "fieldtype": "Small Text",
+   "label": "How will we get this outcome? (Steps)"
+  },
+  {
+   "fieldname": "success_measure",
+   "fieldtype": "Data",
+   "label": "Success Measure"
+  },
+  {
+   "fieldname": "bywhen",
+   "fieldtype": "Date",
+   "label": "By When? "
+  },
+  {
+   "fieldname": "progress_notes",
+   "fieldtype": "Small Text",
+   "label": "Progress Notes "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-15 12:41:25.613601",
+ "modified_by": "Administrator",
+ "module": "Staff Management",
+ "name": "CIP",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

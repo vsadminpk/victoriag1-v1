@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "autoname": "field:full_name",
+ "creation": "2021-05-28 04:42:00.983421",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bd1",
+  "section_break_2",
+  "bd2",
+  "bd3",
+  "html_5",
+  "html_6",
+  "html_7",
+  "html_8",
+  "html_9",
+  "html_10",
+  "html_11",
+  "ck3",
+  "html_13",
+  "ck2",
+  "html_15",
+  "ck1",
+  "section_break_8",
+  "user",
+  "full_name",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "bd1",
+   "fieldtype": "HTML",
+   "label": "bd1",
+   "options": "<h1>Module 2A \u2013 documents</h1>"
+  },
+  {
+   "fieldname": "bd2",
+   "fieldtype": "HTML",
+   "label": "bd2",
+   "options": "<a class=\"btn btn-xs btn-default\" href=\"https://vccg.com.au/wp-content/uploads/2021/05/MANAGEMENT-OF-CATHETER-MANAGEMENT-POLICY-AND-PROCEDURE.pdf\" target=\"_blank\">View MANAGEMENT OF CATHETER MANAGEMENT POLICY AND PROCEDURE</a>"
+  },
+  {
+   "default": "0",
+   "fieldname": "bd3",
+   "fieldtype": "Check",
+   "label": "Acknowledgement - I have read and understood this document"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "Staff Member",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "html_6",
+   "fieldtype": "Check",
+   "label": "Acknowledgement - I have read and understood this document"
+  },
+  {
+   "fieldname": "html_7",
+   "fieldtype": "HTML",
+   "options": "<a class=\"btn btn-xs btn-default\" href=\"https://vccg.com.au/wp-content/uploads/2021/05/MANAGEMENT-OF-COMPLEX-WOUND-POLICY-PROCEDURE.pdf\" target=\"_blank\">View MANAGEMENT OF COMPLEX WOUND POLICY &amp; PROCEDURE</a>"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_5",
+   "fieldtype": "HTML",
+   "options": "<a class=\"btn btn-xs btn-default\" href=\"https://vccg.com.au/wp-content/uploads/2021/05/MANAGEMENT-OF-COMPLEX-BOWEL-POLICY-AND-PROCEDURE.pdf\" target=\"_blank\">View MANAGEMENT OF COMPLEX BOWEL POLICY AND PROCEDURE</a>"
+  },
+  {
+   "default": "0",
+   "fieldname": "html_8",
+   "fieldtype": "Check",
+   "label": "Acknowledgement - I have read and understood this document"
+  },
+  {
+   "fieldname": "html_9",
+   "fieldtype": "HTML",
+   "options": "<a class=\"btn btn-xs btn-default\" href=\"https://vccg.com.au/wp-content/uploads/2021/05/MANAGEMENT-OF-ENTERAL-FEEDING-IN-COMMUNITY-POLICY-AND-PROCEDURE.pdf\" target=\"_blank\">View MANAGEMENT OF ENTERAL FEEDING IN COMMUNITY POLICY AND PROCEDURE</a>"
+  },
+  {
+   "default": "0",
+   "fieldname": "html_10",
+   "fieldtype": "Check",
+   "label": "Acknowledgement - I have read and understood this document"
+  },
+  {
+   "fieldname": "html_11",
+   "fieldtype": "HTML",
+   "options": "<a class=\"btn btn-xs btn-default\" href=\"https://vccg.com.au/wp-content/uploads/2021/05/MANAGEMENT-OF-SUBCUTANEOUS-INJECTION-POLICY-AND-PROCEDURE.pdf\" target=\"_blank\">View MANAGEMENT OF SUBCUTANEOUS INJECTION POLICY AND PROCEDURE</a>"
+  },
+  {
+   "default": "0",
+   "fieldname": "ck3",
+   "fieldtype": "Check",
+   "label": "Acknowledgement - I have read and understood this document"
+  },
+  {
+   "fieldname": "html_13",
+   "fieldtype": "HTML",
+   "options": "<a class=\"btn btn-xs btn-default\" href=\"https://vccg.com.au/wp-content/uploads/2021/05/MANAGEMENT-OF-TRACHEOSTOMY-POLICY-AND-PROCEDURE.pdf\" target=\"_blank\">View MANAGEMENT OF TRACHEOSTOMY POLICY AND PROCEDURE</a>"
+  },
+  {
+   "default": "0",
+   "fieldname": "ck2",
+   "fieldtype": "Check",
+   "label": "Acknowledgement - I have read and understood this document"
+  },
+  {
+   "fieldname": "html_15",
+   "fieldtype": "HTML",
+   "options": "<a class=\"btn btn-xs btn-default\" href=\"https://vccg.com.au/wp-content/uploads/2021/05/RI-Policies.pdf\" target=\"_blank\">View RI Policies</a>"
+  },
+  {
+   "default": "0",
+   "fieldname": "ck1",
+   "fieldtype": "Check",
+   "label": "Acknowledgement - I have read and understood this document"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-05-28 05:20:54.877344",
+ "modified_by": "Administrator",
+ "module": "Staff Management",
+ "name": "Module 2A Documents",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "G1Acs Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

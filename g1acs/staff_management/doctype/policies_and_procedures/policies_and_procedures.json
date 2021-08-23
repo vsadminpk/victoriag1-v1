@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "autoname": "field:full_name",
+ "creation": "2021-01-13 14:59:41.640308",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bd1",
+  "lastbd",
+  "user",
+  "full_name",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "bd1",
+   "fieldtype": "HTML",
+   "label": "bd1",
+   "options": "<h1>Policies and Procedures</h1>"
+  },
+  {
+   "fieldname": "lastbd",
+   "fieldtype": "HTML",
+   "options": "<p>Acknowledgement - I have read and understood this document</p>"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "Staff Member",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "<ul></ul>",
+   "read_only": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-05-28 10:33:34.260387",
+ "modified_by": "Administrator",
+ "module": "Staff Management",
+ "name": "Policies and Procedures",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

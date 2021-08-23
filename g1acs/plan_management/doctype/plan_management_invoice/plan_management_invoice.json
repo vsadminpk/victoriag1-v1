@@ -1,0 +1,349 @@
+{
+ "actions": [],
+ "autoname": "format:{participant}-{####}",
+ "creation": "2021-01-22 05:50:34.361755",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "participant",
+  "service_provider",
+  "invoice_date",
+  "invoice_note",
+  "attachments",
+  "on_hold_reason",
+  "approved_by_client",
+  "services",
+  "grand_total",
+  "docname",
+  "b1",
+  "b2",
+  "b3",
+  "b4",
+  "b5",
+  "b6",
+  "b7",
+  "b8",
+  "b9",
+  "b10",
+  "b11",
+  "b12",
+  "b13",
+  "b14",
+  "b15",
+  "bdr1",
+  "bdr2",
+  "bdr3",
+  "bdr4",
+  "bdr5",
+  "bdr6",
+  "bdr7",
+  "bdr8",
+  "bdr9",
+  "bdr10",
+  "bdr11",
+  "bdr12",
+  "bdr13",
+  "bdr14",
+  "bdr15",
+  "plan"
+ ],
+ "fields": [
+  {
+   "fieldname": "participant",
+   "fieldtype": "Link",
+   "label": "Participant",
+   "options": "Participant"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Link",
+   "label": "Service Provider",
+   "options": "Service Provider"
+  },
+  {
+   "fieldname": "invoice_note",
+   "fieldtype": "Small Text",
+   "label": "Invoice Note"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "on_hold_reason",
+   "fieldtype": "Data",
+   "label": "On Hold Reason"
+  },
+  {
+   "default": "0",
+   "fieldname": "approved_by_client",
+   "fieldtype": "Check",
+   "label": "Approved By Client"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Services Support List"
+  },
+  {
+   "fieldname": "docname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "docname"
+  },
+  {
+   "fieldname": "b1",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b2",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b3",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b4",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b5",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b6",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b7",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b8",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b9",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b10",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b11",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b12",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b13",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b14",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "b15",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "label": "Plan",
+   "options": "Plan"
+  },
+  {
+   "fetch_from": "plan.bdr1",
+   "fieldname": "bdr1",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr2",
+   "fieldname": "bdr2",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr3",
+   "fieldname": "bdr3",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr3",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr4",
+   "fieldname": "bdr4",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr4",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr5",
+   "fieldname": "bdr5",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr5",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr6",
+   "fieldname": "bdr6",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr6",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr7",
+   "fieldname": "bdr7",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr7",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr8",
+   "fieldname": "bdr8",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr8",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr9",
+   "fieldname": "bdr9",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr9",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr10",
+   "fieldname": "bdr10",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr10",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr11",
+   "fieldname": "bdr11",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr11",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr12",
+   "fieldname": "bdr12",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr12",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr13",
+   "fieldname": "bdr13",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr13",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr14",
+   "fieldname": "bdr14",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr14",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "plan.bdr15",
+   "fieldname": "bdr15",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "bdr15",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-05-15 11:38:08.102698",
+ "modified_by": "Administrator",
+ "module": "Plan Management",
+ "name": "Plan Management Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
